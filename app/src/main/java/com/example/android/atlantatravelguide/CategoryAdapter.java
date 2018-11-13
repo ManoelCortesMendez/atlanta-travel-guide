@@ -1,14 +1,19 @@
 package com.example.android.atlantatravelguide;
 
+import android.content.Context;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 
+    private Context mContext;
+
     // Define constructor
-    public CategoryAdapter(FragmentManager fragmentManager) {
+    public CategoryAdapter(Context context, FragmentManager fragmentManager) {
         super(fragmentManager);
+        mContext = context;
     }
 
     // Define methods
@@ -28,5 +33,19 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return 3;
+    }
+
+    @Nullable
+    @Override
+    public CharSequence getPageTitle(int position) {
+        switch (position) {
+            case 0:
+                return mContext.getString(R.string.eat);
+            case 1:
+                return mContext.getString(R.string.sleep);
+            case 2:
+                return mContext.getString(R.string.visit);
+        }
+        return null;
     }
 }
