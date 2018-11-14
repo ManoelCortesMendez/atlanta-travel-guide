@@ -24,15 +24,15 @@ public class SleepFragment extends Fragment {
         // Inflate and set root view
         View rootView = inflater.inflate(R.layout.locations_list, container, false);
 
-        // Create array list of restaurants
-        ArrayList<Location> locations = new ArrayList<>();
+        // Create array list of hotels
+        ArrayList<Location> hotels = new ArrayList<>();
 
-        locations.add(new Location("Solis Two Porsche Drive", R.drawable.solis_two_porsche_drive));
-        locations.add(new Location("Omni Hotel at the Battery", R.drawable.omni_hotel_at_the_battery_atlanta));
-        locations.add(new Location("Grand Hyatt", R.drawable.grand_hyatt_atlanta_in_buckhead));
+        hotels.add(new Location(getString(R.string.solis_two_porsche_drive_name), R.drawable.solis_two_porsche_drive));
+        hotels.add(new Location(getString(R.string.omni_hotel_at_the_battery_name), R.drawable.omni_hotel_at_the_battery_atlanta));
+        hotels.add(new Location(getString(R.string.grand_hyatt_name), R.drawable.grand_hyatt_atlanta_in_buckhead));
 
-        // Display list of restaurants efficiently
-        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);
+        // Display list of hotels efficiently
+        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), hotels);
         ListView locationsList = rootView.findViewById(R.id.locations_list);
         locationsList.setAdapter(locationAdapter);
 

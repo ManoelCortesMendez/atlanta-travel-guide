@@ -24,15 +24,15 @@ public class VisitFragment extends Fragment {
         // Inflate and set root view
         View rootView = inflater.inflate(R.layout.locations_list, container, false);
 
-        // Create array list of restaurants
-        ArrayList<Location> locations = new ArrayList<>();
+        // Create array list of things to do
+        ArrayList<Location> visits = new ArrayList<>();
 
-        locations.add(new Location("Georgia Aquarium", R.drawable.georgia_aquarium));
-        locations.add(new Location("World of Coca-Cola", R.drawable.world_of_coca_cola));
-        locations.add(new Location("Atlanta Botanical Garden", R.drawable.atlanta_botanical_garden));
+        visits.add(new Location(getString(R.string.georgia_aquarium_name), R.drawable.georgia_aquarium));
+        visits.add(new Location(getString(R.string.world_of_coca_cola_name), R.drawable.world_of_coca_cola));
+        visits.add(new Location(getString(R.string.atlanta_botanical_garden_name), R.drawable.atlanta_botanical_garden));
 
-        // Display list of restaurants efficiently
-        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);
+        // Display list of things to do efficiently
+        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), visits);
         ListView locationsList = rootView.findViewById(R.id.locations_list);
         locationsList.setAdapter(locationAdapter);
 

@@ -1,9 +1,27 @@
 <resources>
     <string name="app_name">Atlanta Travel Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="eat">eat</string>
+    <string name="drink">drink</string>
     <string name="sleep">sleep</string>
     <string name="visit">visit</string>
+
+    <string name="normal_tab_color">#78909c</string>
+    <string name="selected_tab_color">#263238</string>
+
+    <string name="bones_restaurant_name">Bones Restaurant</string>
+    <string name="the_capital_grille_name">The Capital Grille</string>
+    <string name="babettes_cafe_name">Babette\'s Cafe</string>
+
+    <string name="sports_and_social_at_battery_name"><![CDATA[Sports & Social at Battery]]></string>
+    <string name="hampton_hudson_name">Hampton + Hudson</string>
+    <string name="himitsu_name">Himitsu</string>
+
+    <string name="solis_two_porsche_drive_name">Solis Two Porsche Drive</string>
+    <string name="omni_hotel_at_the_battery_name">Omni Hotel at the Battery</string>
+    <string name="grand_hyatt_name">Grand Hyatt</string>
+
+    <string name="georgia_aquarium_name">Georgia Aquarium</string>
+    <string name="world_of_coca_cola_name">World of Coca-Cola</string>
+    <string name="atlanta_botanical_garden_name">Atlanta Botanical Garden</string>
 </resources>

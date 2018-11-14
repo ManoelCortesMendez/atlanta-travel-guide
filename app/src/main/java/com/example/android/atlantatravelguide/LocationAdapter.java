@@ -28,14 +28,14 @@ public class LocationAdapter extends ArrayAdapter {
             locationItemView = LayoutInflater.from(getContext()).inflate(R.layout.location_item, parent, false);
         }
 
-        // Get current restaurant
+        // Get current location
         Location currentLocation = (Location) getItem(position);
 
-        // Set restaurant image
+        // Set location image
         ImageView locationImageView = locationItemView.findViewById(R.id.location_image);
         locationImageView.setImageResource(currentLocation.getImageResourceId());
 
-        // Set restaurant name
+        // Set location name
         TextView locationNameView = locationItemView.findViewById(R.id.location_name);
         locationNameView.setText(currentLocation.getName());
 

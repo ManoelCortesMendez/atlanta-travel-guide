@@ -25,14 +25,14 @@ public class EatFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.locations_list, container, false);
 
         // Create array list of restaurants
-        ArrayList<Location> locations = new ArrayList<>();
+        ArrayList<Location> restaurants = new ArrayList<>();
 
-        locations.add(new Location("Bones Restaurant", R.drawable.bones));
-        locations.add(new Location("The Capital Grille", R.drawable.the_capital_grille));
-        locations.add(new Location("Babette's Cafe", R.drawable.babettes_cafe));
+        restaurants.add(new Location(getString(R.string.bones_restaurant_name), R.drawable.bones));
+        restaurants.add(new Location(getString(R.string.the_capital_grille_name), R.drawable.the_capital_grille));
+        restaurants.add(new Location(getString(R.string.babettes_cafe_name), R.drawable.babettes_cafe));
 
         // Display list of restaurants efficiently
-        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);
+        LocationAdapter locationAdapter = new LocationAdapter(getActivity(), restaurants);
         ListView locationsList = rootView.findViewById(R.id.locations_list);
         locationsList.setAdapter(locationAdapter);
 

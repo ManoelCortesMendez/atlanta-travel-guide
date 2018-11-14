@@ -23,8 +23,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             case 0:
                 return new EatFragment();
             case 1:
-                return new SleepFragment();
+                return new DrinkFragment();
             case 2:
+                return new SleepFragment();
+            case 3:
                 return new VisitFragment();
         }
         return null;
@@ -32,7 +34,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 3;
+        return 4;
     }
 
     @Nullable
@@ -42,8 +44,10 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             case 0:
                 return mContext.getString(R.string.eat);
             case 1:
-                return mContext.getString(R.string.sleep);
+                return mContext.getString(R.string.drink);
             case 2:
+                return mContext.getString(R.string.sleep);
+            case 3:
                 return mContext.getString(R.string.visit);
         }
         return null;
